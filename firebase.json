@@ -1,0 +1,29 @@
+{
+  "hosting": [
+    {
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "site": "ng17-ssr",
+      "rewrites": [
+        {
+          "source": "/**",
+          "destination": "/index.html"
+        }
+      ],
+      "redirects": [],
+      "headers": [],
+      "cleanUrls": true,
+      "i18n": {
+        "root": "/"
+      },
+      "public": "dist/ng17-ssr/browser",
+      "webFramework": "angular"
+    }
+  ]
+}

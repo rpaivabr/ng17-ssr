@@ -1,0 +1,5 @@
+@for(post of posts(); track post.slug) {
+    <p><a [routerLink]="[post.slug]">{{ post.title}}</a> - {{ post.description }}</p>
+} @empty {
+    <p>No posts.</p>
+}
